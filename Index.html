@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+}
+.parent > div {
+    height: 240px;
+    background-color: red;
+}
+.div1 {
+    grid-row: span 2 / span 2;
+    height: 488px!important;
+    background-image: url("grid1.png");
+    background-size: cover;
+}
+.div4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.div5 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.div6 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+.div7 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+    </style>
+</head>
+<body>
+    <div style="width: 1500px; margin: 0 auto;">
+    <div style="height: 40px;">
+        <img  src="logo.png" width="220px" style="float: left;">
+        <img  src="hamburger.png" width="40px" height="40px" style="float: left; padding: 10px; background-color: #f9f9f9; border-radius: 100%;">
+        
+        <img src="seek.png" width="30px" style="float: right; margin: 10px;">
+        <div style="float: right;display: block;margin: 10px;margin-top: 15px;">Log In</div>
+    </div>
+    <br><br>
+    <div>
+        <img src="slider1.png" width="1500px">
+    </div>
+    <br>
+    <div class="parent">
+    <div class="div1"></div>
+    <div class="div2" style="background-image: url('grid2.png'); background-size: cover;"></div>
+    <div class="div3" style="background-image: url('grid3.png'); background-size: cover;"></div>
+    <div class="div4" style="background-image: url('grid4.png'); background-size: cover;"></div>
+    <div class="div5" style="background-image: url('grid5.png'); background-size: cover;"></div>
+    <div class="div6" style="background-image: url('grid6.png'); background-size: cover;"></div>
+    <div class="div7" style="background-image: url('grid7.png'); background-size: cover;"></div>
+</div>
+</div>
+</body>
+</html>
